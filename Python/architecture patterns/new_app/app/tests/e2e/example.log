@@ -1,0 +1,43 @@
+INFO:root:teste
+INFO:root:views.redis_eventconsumer
+INFO:root:This message should go to the log file
+INFO:root:handling {'data': '{ "batchref": "batch-1-e5503e", "qty": 5 }'}
+INFO:root:teste
+INFO:root:views.redis_eventconsumer
+INFO:root:This message should go to the log file
+INFO:root:handling {'data': '{ "batchref": "batch-1-e5503e", "qty": 5 }'}
+INFO:root:This message should go to the log file
+INFO:root:handling {'data': '{ "batchref": "batch-newer-7449ca", "qty": 5 }'}
+INFO:root:handling command ChangeBatchQuantity(ref='batch-newer-7449ca', qty=5)
+INFO:root:chegou pra alterar a quantidade da remessa
+INFO:root:This message should go to the log file
+INFO:root:handling {'data': '{ "batchref": "batch-1-e5503e", "qty": 5 }'}
+INFO:root:handling command ChangeBatchQuantity(ref='batch-1-e5503e', qty=5)
+INFO:root:chegou pra alterar a quantidade da remessa
+INFO:root:vai alterar
+INFO:root:handling {'data': '{ "batchref": "batch-1-e5503e", "qty": 5 }'}
+INFO:root:handling command ChangeBatchQuantity(ref='batch-1-e5503e', qty=5)
+INFO:root:SQL expression, column, or mapped entity expected - got '<class 'domains.model.Product'>'
+INFO:root:handling {'data': '{ "batchref": "batch-newer-cdb516", "qty": 5 }'}
+INFO:root:handling command ChangeBatchQuantity(ref='batch-newer-cdb516', qty=5)
+INFO:root:SQL expression, column, or mapped entity expected - got '<class 'domains.model.Product'>'
+INFO:root:handling {'data': '{ "batchref": "batch-newer-cdb516", "qty": 5 }'}
+INFO:root:handling command ChangeBatchQuantity(ref='batch-newer-cdb516', qty=5)
+INFO:root:SQL expression, column, or mapped entity expected - got '<class 'domains.model.Product'>'
+INFO:root:handling {'data': '{ "batchref": "batch-newer-cdb516", "qty": 5 }'}
+INFO:root:handling command ChangeBatchQuantity(ref='batch-newer-cdb516', qty=5)
+INFO:root:SQL expression, column, or mapped entity expected - got '<class 'domains.model.Product'>'
+INFO:root:handling {'data': '{ "batchref": "batch-newer-cdb516", "qty": 5 }'}
+INFO:root:handling command ChangeBatchQuantity(ref='batch-newer-cdb516', qty=5)
+INFO:root:handling {'data': '{ "batchref": "batch-newer-cdb516", "qty": 5 }'}
+INFO:root:handling command ChangeBatchQuantity(ref='batch-newer-cdb516', qty=5)
+INFO:root:chegou pra alterar a quantidade da remessa
+INFO:root:vai alterar
+INFO:root:desalocou 
+INFO:root:handling command Allocate(orderid='order--7b9b93', sku='sku--d79890', qty=10)
+INFO:root:handling event Allocated(orderid='order--7b9b93', sku='sku--d79890', qty=10, batchref='batch-old-708509') with handler <function publish_allocated_event at 0x000001E7DC2CE1F8>
+INFO:root:vai publicar o evento line_allocated
+INFO:root:handling {'data': '{ "batchref": "batch-newer-cdb516", "qty": 5 }'}
+INFO:root:handling command ChangeBatchQuantity(ref='batch-newer-cdb516', qty=5)
+INFO:root:não achou o produto: None pra referencia: batch-newer-cdb516
+INFO:root:chegou pra alterar a quantidade da remessa

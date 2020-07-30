@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/appendix_b/code" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/appendix_c/code" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/appendix_d/code" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/chapter 2/code" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/chapter 3/code" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/chapter 4/code" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/chapter 6/code" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/chapter_10/code" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/chapter_11/code" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/chapter_12/code" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/chapter_13/code" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/chapter_2/code" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/chapter_3/code" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/chapter_4/code" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/chapter_6/code" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/chapter_7/code" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/chapter_8/code" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/chapter_9/code" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/code" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/new_app/chapter_12/code" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/new_app/chapter_7/code" vcs="Git" />
+  </component>
+</project>

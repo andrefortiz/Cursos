@@ -1,0 +1,86 @@
+INFO:root:handling command CreateBatch(ref='b1', sku='CRUNCHY-ARMCHAIR', qty=100, eta=None)
+INFO:root:handling command CreateBatch(ref='b1', sku='COMPLICATED-LAMP', qty=100, eta=None)
+INFO:root:handling command Allocate(orderid='o1', sku='COMPLICATED-LAMP', qty=10)
+INFO:root:handling event Allocated(orderid='o1', sku='COMPLICATED-LAMP', qty=10, batchref='b1') with handler <function publish_allocated_event at 0x0000029EB83D1B88>
+INFO:root:vai publicar o evento line_allocated: Allocated(orderid='o1', sku='COMPLICATED-LAMP', qty=10, batchref='b1')
+INFO:root:handling event Allocated(orderid='o1', sku='COMPLICATED-LAMP', qty=10, batchref='b1') with handler <function add_allocation_to_read_model at 0x0000029EB83D1A68>
+INFO:root:vai inserir na tabela de leitura: Allocated(orderid='o1', sku='COMPLICATED-LAMP', qty=10, batchref='b1')
+INFO:root:handling event Allocated(orderid='o1', sku='COMPLICATED-LAMP', qty=10, batchref='b1') with handler <function add_allocation_to_read_model at 0x0000029EB83D1A68>
+INFO:root:vai inserir na tabela de leitura: Allocated(orderid='o1', sku='COMPLICATED-LAMP', qty=10, batchref='b1')
+INFO:root:handling event Allocated(orderid='o1', sku='COMPLICATED-LAMP', qty=10, batchref='b1') with handler <function add_allocation_to_read_model at 0x0000029EB83D1A68>
+INFO:root:vai inserir na tabela de leitura: Allocated(orderid='o1', sku='COMPLICATED-LAMP', qty=10, batchref='b1')
+INFO:root:Failed to handle event 3 times, givin up!
+INFO:root:handling command CreateBatch(ref='b1', sku='COMPLICATED-LAMP', qty=100, eta=None)
+INFO:root:handling command ChangeBatchQuantity(ref='b1', qty=50)
+INFO:root:chegou pra alterar a quantidade da remessa
+INFO:root:vai alterar o produto :COMPLICATED-LAMP
+INFO:root:handling command CreateBatch(ref='b1', sku='FACA-DOISGUMES', qty=50, eta=None)
+INFO:root:handling command CreateBatch(ref='b2', sku='FACA-DOISGUMES', qty=50, eta=datetime.date(2020, 6, 25))
+INFO:root:handling command Allocate(orderid='o1', sku='FACA-DOISGUMES', qty=21)
+INFO:root:handling event Allocated(orderid='o1', sku='FACA-DOISGUMES', qty=21, batchref='b1') with handler <function publish_allocated_event at 0x0000029EB83D1B88>
+INFO:root:vai publicar o evento line_allocated: Allocated(orderid='o1', sku='FACA-DOISGUMES', qty=21, batchref='b1')
+INFO:root:handling event Allocated(orderid='o1', sku='FACA-DOISGUMES', qty=21, batchref='b1') with handler <function add_allocation_to_read_model at 0x0000029EB83D1A68>
+INFO:root:vai inserir na tabela de leitura: Allocated(orderid='o1', sku='FACA-DOISGUMES', qty=21, batchref='b1')
+INFO:root:handling event Allocated(orderid='o1', sku='FACA-DOISGUMES', qty=21, batchref='b1') with handler <function add_allocation_to_read_model at 0x0000029EB83D1A68>
+INFO:root:vai inserir na tabela de leitura: Allocated(orderid='o1', sku='FACA-DOISGUMES', qty=21, batchref='b1')
+INFO:root:handling event Allocated(orderid='o1', sku='FACA-DOISGUMES', qty=21, batchref='b1') with handler <function add_allocation_to_read_model at 0x0000029EB83D1A68>
+INFO:root:vai inserir na tabela de leitura: Allocated(orderid='o1', sku='FACA-DOISGUMES', qty=21, batchref='b1')
+INFO:root:Failed to handle event 3 times, givin up!
+INFO:root:handling command Allocate(orderid='o2', sku='FACA-DOISGUMES', qty=20)
+INFO:root:handling event Allocated(orderid='o2', sku='FACA-DOISGUMES', qty=20, batchref='b1') with handler <function publish_allocated_event at 0x0000029EB83D1B88>
+INFO:root:vai publicar o evento line_allocated: Allocated(orderid='o2', sku='FACA-DOISGUMES', qty=20, batchref='b1')
+INFO:root:handling event Allocated(orderid='o2', sku='FACA-DOISGUMES', qty=20, batchref='b1') with handler <function add_allocation_to_read_model at 0x0000029EB83D1A68>
+INFO:root:vai inserir na tabela de leitura: Allocated(orderid='o2', sku='FACA-DOISGUMES', qty=20, batchref='b1')
+INFO:root:handling event Allocated(orderid='o2', sku='FACA-DOISGUMES', qty=20, batchref='b1') with handler <function add_allocation_to_read_model at 0x0000029EB83D1A68>
+INFO:root:vai inserir na tabela de leitura: Allocated(orderid='o2', sku='FACA-DOISGUMES', qty=20, batchref='b1')
+INFO:root:handling event Allocated(orderid='o2', sku='FACA-DOISGUMES', qty=20, batchref='b1') with handler <function add_allocation_to_read_model at 0x0000029EB83D1A68>
+INFO:root:vai inserir na tabela de leitura: Allocated(orderid='o2', sku='FACA-DOISGUMES', qty=20, batchref='b1')
+INFO:root:Failed to handle event 3 times, givin up!
+INFO:root:handling command ChangeBatchQuantity(ref='b1', qty=25)
+INFO:root:chegou pra alterar a quantidade da remessa
+INFO:root:vai alterar o produto :FACA-DOISGUMES
+INFO:root:desalocou 
+INFO:root:handling command Allocate(orderid='o2', sku='FACA-DOISGUMES', qty=20)
+INFO:root:handling event Allocated(orderid='o2', sku='FACA-DOISGUMES', qty=20, batchref='b2') with handler <function publish_allocated_event at 0x0000029EB83D1B88>
+INFO:root:vai publicar o evento line_allocated: Allocated(orderid='o2', sku='FACA-DOISGUMES', qty=20, batchref='b2')
+INFO:root:handling event Allocated(orderid='o2', sku='FACA-DOISGUMES', qty=20, batchref='b2') with handler <function add_allocation_to_read_model at 0x0000029EB83D1A68>
+INFO:root:vai inserir na tabela de leitura: Allocated(orderid='o2', sku='FACA-DOISGUMES', qty=20, batchref='b2')
+INFO:root:handling event Allocated(orderid='o2', sku='FACA-DOISGUMES', qty=20, batchref='b2') with handler <function add_allocation_to_read_model at 0x0000029EB83D1A68>
+INFO:root:vai inserir na tabela de leitura: Allocated(orderid='o2', sku='FACA-DOISGUMES', qty=20, batchref='b2')
+INFO:root:handling event Allocated(orderid='o2', sku='FACA-DOISGUMES', qty=20, batchref='b2') with handler <function add_allocation_to_read_model at 0x0000029EB83D1A68>
+INFO:root:vai inserir na tabela de leitura: Allocated(orderid='o2', sku='FACA-DOISGUMES', qty=20, batchref='b2')
+INFO:root:Failed to handle event 3 times, givin up!
+INFO:root:handling command CreateBatch(ref='b1', sku='POPULAR-CURTAINS', qty=9, eta=None)
+INFO:root:handling command Allocate(orderid='o1', sku='POPULAR-CURTAINS', qty=10)
+INFO:root:handling event OutOfStock(sku='POPULAR-CURTAINS') with handler <function inject_dependencies.<locals>.<lambda> at 0x000001492A8CB5E8>
+INFO:root:vai enviar email out of stock
+INFO:root:handling command CreateBatch(ref='b1', sku='POPULAR-CURTAINS', qty=9, eta=None)
+INFO:root:handling command Allocate(orderid='o1', sku='POPULAR-CURTAINS', qty=10)
+INFO:root:handling event OutOfStock(sku='POPULAR-CURTAINS') with handler <function inject_dependencies.<locals>.<lambda> at 0x000001995F9B7798>
+INFO:root:vai enviar email out of stock
+INFO:root:handling command CreateBatch(ref='b1', sku='POPULAR-CURTAINS', qty=9, eta=None)
+INFO:root:handling command Allocate(orderid='o1', sku='POPULAR-CURTAINS', qty=10)
+INFO:root:handling event OutOfStock(sku='POPULAR-CURTAINS') with handler <function inject_dependencies.<locals>.<lambda> at 0x00000192E4488798>
+INFO:root:vai enviar email out of stock
+INFO:root:handling command CreateBatch(ref='b1', sku='POPULAR-CURTAINS', qty=9, eta=None)
+INFO:root:handling command Allocate(orderid='o1', sku='POPULAR-CURTAINS', qty=10)
+INFO:root:handling event OutOfStock(sku='POPULAR-CURTAINS') with handler <function inject_dependencies.<locals>.<lambda> at 0x0000018716858798>
+INFO:root:vai enviar email out of stock
+INFO:root:handling command CreateBatch(ref='b1', sku='POPULAR-CURTAINS', qty=9, eta=None)
+INFO:root:handling command CreateBatch(ref='b1', sku='POPULAR-CURTAINS', qty=9, eta=None)
+INFO:root:handling command CreateBatch(ref='b1', sku='CRUNCHY-ARMCHAIR', qty=100, eta=None)
+INFO:root:handling command CreateBatch(ref='b1', sku='COMPLICATED-LAMP', qty=100, eta=None)
+INFO:root:handling command CreateBatch(ref='b1', sku='COMPLICATED-LAMP', qty=100, eta=None)
+INFO:root:handling command CreateBatch(ref='b1', sku='COMPLICATED-LAMP', qty=100, eta=None)
+INFO:root:handling command CreateBatch(ref='b1', sku='COMPLICATED-LAMP', qty=100, eta=None)
+INFO:root:handling command Allocate(orderid='o1', sku='COMPLICATED-LAMP', qty=0)
+INFO:root:handling event Allocated(orderid='o1', sku='COMPLICATED-LAMP', qty=0, batchref='b1') with handler <function inject_dependencies.<locals>.<lambda> at 0x000001EC3F3A9CA8>
+INFO:root:vai publicar o evento line_allocated: Allocated(orderid='o1', sku='COMPLICATED-LAMP', qty=0, batchref='b1')
+INFO:root:handling event Allocated(orderid='o1', sku='COMPLICATED-LAMP', qty=0, batchref='b1') with handler <function inject_dependencies.<locals>.<lambda> at 0x000001EC3F3A9D38>
+INFO:root:vai inserir na tabela de leitura: Allocated(orderid='o1', sku='COMPLICATED-LAMP', qty=0, batchref='b1')
+INFO:root:handling event Allocated(orderid='o1', sku='COMPLICATED-LAMP', qty=0, batchref='b1') with handler <function inject_dependencies.<locals>.<lambda> at 0x000001EC3F3A9D38>
+INFO:root:vai inserir na tabela de leitura: Allocated(orderid='o1', sku='COMPLICATED-LAMP', qty=0, batchref='b1')
+INFO:root:handling event Allocated(orderid='o1', sku='COMPLICATED-LAMP', qty=0, batchref='b1') with handler <function inject_dependencies.<locals>.<lambda> at 0x000001EC3F3A9D38>
+INFO:root:vai inserir na tabela de leitura: Allocated(orderid='o1', sku='COMPLICATED-LAMP', qty=0, batchref='b1')
+INFO:root:Failed to handle event 3 times, givin up!
+INFO:root:handling command CreateBatch(ref='b1', sku='COMPLICATED-LAMP', qty=100, eta=None)

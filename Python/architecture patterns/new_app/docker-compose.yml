@@ -1,0 +1,72 @@
+version: "3"
+
+services:
+
+  redis_pubsub:
+    build: ./app
+      #context: .
+      #dockerfile: Dockerfile
+    image: allocation-image
+    container_name: redis_pubsub_new_app
+    depends_on:
+      - postgres
+      - redis
+    environment:
+      - REDIS_HOST=redis
+      - PYTHONDONTWRITEBYTECODE=1
+      - DB_HOST=postgres
+      - DB_PASSWORD=abc123
+    volumes:
+      - ./src:/src
+      - ./tests:/tests
+    entrypoint:
+      - python
+      - entrypoints/redis_eventconsumer.py
+
+  api:
+    image: allocation-image #esse cara é uma imagem do linux Debian GNU
+    container_name: api_new_app
+    depends_on:
+      - redis_pubsub
+    environment:
+      - API_HOST=api
+      - REDIS_HOST=redis
+      - PYTHONDONTWRITEBYTECODE=1
+      - FLASK_APP=flask_app.py
+      - FLASK_DEBUG=1
+      - PYTHONUNBUFFERED=1
+      - DB_HOST=192.168.99.100
+      - DB_PASSWORD=abc123
+    volumes:
+      - ./src:/src
+      - ./tests:/tests
+    #entrypoint:
+    #  - flask
+    #  - run
+    #  - --host=0.0.0.0
+    #  - --port=80
+    #ports:
+    #  - "5005:80"
+    expose:
+      - 8080
+
+  postgres:
+    image: postgres:9.6
+    environment:
+      - POSTGRES_USER=allocation
+      - POSTGRES_PASSWORD=abc123
+    ports:
+      - "54321:5432"
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "63791:6379"
+
+  nginx:
+    build: ./nginx
+    container_name: nginx_new_app
+    restart: always
+    ports:
+      - "80:80"
+

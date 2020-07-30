@@ -1,0 +1,14 @@
+# app
+sqlalchemy
+flask
+psycopg2-binary
+schema~=0.7.2
+uwsgi
+
+# dev/tests
+pytest
+pytest-icdiff
+pylint
+requests
+redis
+tenacity

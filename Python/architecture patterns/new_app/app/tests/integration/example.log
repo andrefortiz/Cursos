@@ -1,0 +1,387 @@
+INFO:root:handling command CreateBatch(ref='batch-1-8a6dd4', sku='sku-1-dc90da', qty=50, eta=None)
+INFO:root:handling command CreateBatch(ref='batch-2-03533b', sku='sku-2-6a6d08', qty=50, eta=None)
+INFO:root:handling command Allocate(orderid='order-1-64e404', sku='sku-1-dc90da', qty=20)
+INFO:root:handling event Allocated(orderid='order-1-64e404', sku='sku-1-dc90da', qty=20, batchref='batch-1-8a6dd4') with handler <function publish_allocated_event at 0x000002077E169D38>
+INFO:root:vai publicar o evento line_allocated
+INFO:root:handling command Allocate(orderid='order-2-848c13', sku='sku-2-6a6d08', qty=20)
+INFO:root:handling event Allocated(orderid='order-2-848c13', sku='sku-2-6a6d08', qty=20, batchref='batch-2-03533b') with handler <function publish_allocated_event at 0x000002077E169D38>
+INFO:root:vai publicar o evento line_allocated
+INFO:root:handling command CreateBatch(ref='batch-other-1-e76815', sku='sku-1-dc90da', qty=50, eta=datetime.date(2020, 6, 21))
+INFO:root:handling command Allocate(orderid='order-other-1-845e82', sku='sku-1-dc90da', qty=30)
+INFO:root:handling event Allocated(orderid='order-other-1-845e82', sku='sku-1-dc90da', qty=30, batchref='batch-1-8a6dd4') with handler <function publish_allocated_event at 0x000002077E169D38>
+INFO:root:vai publicar o evento line_allocated
+INFO:root:handling command Allocate(orderid='order-other-2-3bcabb', sku='sku-2-6a6d08', qty=10)
+INFO:root:handling event Allocated(orderid='order-other-2-3bcabb', sku='sku-2-6a6d08', qty=10, batchref='batch-2-03533b') with handler <function publish_allocated_event at 0x000002077E169D38>
+INFO:root:vai publicar o evento line_allocated
+INFO:root:handling command CreateBatch(ref='batch-1-e70a45', sku='sku-1-14d45e', qty=50, eta=None)
+INFO:root:handling command CreateBatch(ref='batch-2-6d12ee', sku='sku-2-e85786', qty=50, eta=None)
+INFO:root:handling command Allocate(orderid='order-1-3c9518', sku='sku-1-14d45e', qty=20)
+INFO:root:handling event Allocated(orderid='order-1-3c9518', sku='sku-1-14d45e', qty=20, batchref='batch-1-e70a45') with handler <function publish_allocated_event at 0x00000240D4B88D38>
+INFO:root:vai publicar o evento line_allocated
+INFO:root:handling command Allocate(orderid='order-2-42408b', sku='sku-2-e85786', qty=20)
+INFO:root:handling event Allocated(orderid='order-2-42408b', sku='sku-2-e85786', qty=20, batchref='batch-2-6d12ee') with handler <function publish_allocated_event at 0x00000240D4B88D38>
+INFO:root:vai publicar o evento line_allocated
+INFO:root:handling command CreateBatch(ref='batch-other-1-26da14', sku='sku-1-14d45e', qty=50, eta=datetime.date(2020, 6, 21))
+INFO:root:handling command Allocate(orderid='order-other-1-796086', sku='sku-1-14d45e', qty=30)
+INFO:root:handling event Allocated(orderid='order-other-1-796086', sku='sku-1-14d45e', qty=30, batchref='batch-1-e70a45') with handler <function publish_allocated_event at 0x00000240D4B88D38>
+INFO:root:vai publicar o evento line_allocated
+INFO:root:handling command Allocate(orderid='order-other-2-7ebd15', sku='sku-2-e85786', qty=10)
+INFO:root:handling event Allocated(orderid='order-other-2-7ebd15', sku='sku-2-e85786', qty=10, batchref='batch-2-6d12ee') with handler <function publish_allocated_event at 0x00000240D4B88D38>
+INFO:root:vai publicar o evento line_allocated
+INFO:root:handling command CreateBatch(ref='batch-1-273be2', sku='sku-1-8252cf', qty=50, eta=None)
+INFO:root:handling command CreateBatch(ref='batch-2-c8cbe4', sku='sku-2-7a2e07', qty=50, eta=None)
+INFO:root:handling command Allocate(orderid='order-1-1c3311', sku='sku-1-8252cf', qty=20)
+INFO:root:handling event Allocated(orderid='order-1-1c3311', sku='sku-1-8252cf', qty=20, batchref='batch-1-273be2') with handler <function publish_allocated_event at 0x000001DE84159F78>
+INFO:root:vai publicar o evento line_allocated
+INFO:root:handling command Allocate(orderid='order-2-cb4fc9', sku='sku-2-7a2e07', qty=20)
+INFO:root:handling event Allocated(orderid='order-2-cb4fc9', sku='sku-2-7a2e07', qty=20, batchref='batch-2-c8cbe4') with handler <function publish_allocated_event at 0x000001DE84159F78>
+INFO:root:vai publicar o evento line_allocated
+INFO:root:handling command CreateBatch(ref='batch-other-1-8cc366', sku='sku-1-8252cf', qty=50, eta=datetime.date(2020, 6, 21))
+INFO:root:handling command Allocate(orderid='order-other-1-fd2c72', sku='sku-1-8252cf', qty=30)
+INFO:root:handling event Allocated(orderid='order-other-1-fd2c72', sku='sku-1-8252cf', qty=30, batchref='batch-1-273be2') with handler <function publish_allocated_event at 0x000001DE84159F78>
+INFO:root:vai publicar o evento line_allocated
+INFO:root:handling command Allocate(orderid='order-other-2-f2658e', sku='sku-2-7a2e07', qty=10)
+INFO:root:handling event Allocated(orderid='order-other-2-f2658e', sku='sku-2-7a2e07', qty=10, batchref='batch-2-c8cbe4') with handler <function publish_allocated_event at 0x000001DE84159F78>
+INFO:root:vai publicar o evento line_allocated
+INFO:root:handling command CreateBatch(ref='batch-1-621e1c', sku='sku-1-772fa4', qty=50, eta=None)
+INFO:root:handling command CreateBatch(ref='batch-2-06decd', sku='sku-2-43234e', qty=50, eta=None)
+INFO:root:handling command Allocate(orderid='order-1-00c43d', sku='sku-1-772fa4', qty=20)
+INFO:root:handling event Allocated(orderid='order-1-00c43d', sku='sku-1-772fa4', qty=20, batchref='batch-1-621e1c') with handler <function publish_allocated_event at 0x000001F1B444AEE8>
+INFO:root:vai publicar o evento line_allocated
+INFO:root:handling command Allocate(orderid='order-2-32cfd6', sku='sku-2-43234e', qty=20)
+INFO:root:handling event Allocated(orderid='order-2-32cfd6', sku='sku-2-43234e', qty=20, batchref='batch-2-06decd') with handler <function publish_allocated_event at 0x000001F1B444AEE8>
+INFO:root:vai publicar o evento line_allocated
+INFO:root:handling command CreateBatch(ref='batch-other-1-95f9e3', sku='sku-1-772fa4', qty=50, eta=datetime.date(2020, 6, 21))
+INFO:root:handling command Allocate(orderid='order-other-1-79e586', sku='sku-1-772fa4', qty=30)
+INFO:root:handling event Allocated(orderid='order-other-1-79e586', sku='sku-1-772fa4', qty=30, batchref='batch-1-621e1c') with handler <function publish_allocated_event at 0x000001F1B444AEE8>
+INFO:root:vai publicar o evento line_allocated
+INFO:root:handling command Allocate(orderid='order-other-2-25b878', sku='sku-2-43234e', qty=10)
+INFO:root:handling event Allocated(orderid='order-other-2-25b878', sku='sku-2-43234e', qty=10, batchref='batch-2-06decd') with handler <function publish_allocated_event at 0x000001F1B444AEE8>
+INFO:root:vai publicar o evento line_allocated
+INFO:root:handling command CreateBatch(ref='batch-1-16f595', sku='sku-1-54fe70', qty=50, eta=None)
+INFO:root:handling command CreateBatch(ref='batch-2-3d30e8', sku='sku-2-8c39de', qty=50, eta=None)
+INFO:root:handling command Allocate(orderid='order-1-cd5936', sku='sku-1-54fe70', qty=20)
+INFO:root:handling event Allocated(orderid='order-1-cd5936', sku='sku-1-54fe70', qty=20, batchref='batch-1-16f595') with handler <function publish_allocated_event at 0x0000025477CBAEE8>
+INFO:root:vai publicar o evento line_allocated
+INFO:root:handling command Allocate(orderid='order-1-cd5936', sku='sku-2-8c39de', qty=20)
+INFO:root:handling event Allocated(orderid='order-1-cd5936', sku='sku-2-8c39de', qty=20, batchref='batch-2-3d30e8') with handler <function publish_allocated_event at 0x0000025477CBAEE8>
+INFO:root:vai publicar o evento line_allocated
+INFO:root:handling command CreateBatch(ref='batch-other-1-933531', sku='sku-1-54fe70', qty=50, eta=datetime.date(2020, 6, 21))
+INFO:root:handling command Allocate(orderid='order-other-1-af1e03', sku='sku-1-54fe70', qty=30)
+INFO:root:handling event Allocated(orderid='order-other-1-af1e03', sku='sku-1-54fe70', qty=30, batchref='batch-1-16f595') with handler <function publish_allocated_event at 0x0000025477CBAEE8>
+INFO:root:vai publicar o evento line_allocated
+INFO:root:handling command CreateBatch(ref='batch-1-00ea93', sku='sku-1-738686', qty=50, eta=None)
+INFO:root:handling command CreateBatch(ref='batch-2-cdf018', sku='sku-2-a3fcdc', qty=50, eta=None)
+INFO:root:handling command Allocate(orderid='order-1-4f61be', sku='sku-1-738686', qty=20)
+INFO:root:handling event Allocated(orderid='order-1-4f61be', sku='sku-1-738686', qty=20, batchref='batch-1-00ea93') with handler <function publish_allocated_event at 0x000001F9D5F2BEE8>
+INFO:root:vai publicar o evento line_allocated
+INFO:root:handling command Allocate(orderid='order-1-4f61be', sku='sku-2-a3fcdc', qty=20)
+INFO:root:handling event Allocated(orderid='order-1-4f61be', sku='sku-2-a3fcdc', qty=20, batchref='batch-2-cdf018') with handler <function publish_allocated_event at 0x000001F9D5F2BEE8>
+INFO:root:vai publicar o evento line_allocated
+INFO:root:handling command CreateBatch(ref='batch-other-1-ef61bd', sku='sku-1-738686', qty=50, eta=datetime.date(2020, 6, 21))
+INFO:root:handling command Allocate(orderid='order-other-1-25ef02', sku='sku-1-738686', qty=30)
+INFO:root:handling event Allocated(orderid='order-other-1-25ef02', sku='sku-1-738686', qty=30, batchref='batch-1-00ea93') with handler <function publish_allocated_event at 0x000001F9D5F2BEE8>
+INFO:root:vai publicar o evento line_allocated
+INFO:root:handling command Allocate(orderid='order-other-1-25ef02', sku='sku-2-a3fcdc', qty=10)
+INFO:root:handling event Allocated(orderid='order-other-1-25ef02', sku='sku-2-a3fcdc', qty=10, batchref='batch-2-cdf018') with handler <function publish_allocated_event at 0x000001F9D5F2BEE8>
+INFO:root:vai publicar o evento line_allocated
+INFO:root:handling command CreateBatch(ref='batch-1-cccbab', sku='sku-1-752639', qty=50, eta=None)
+INFO:root:handling command CreateBatch(ref='batch-2-172fca', sku='sku-2-1348e7', qty=50, eta=None)
+INFO:root:handling command Allocate(orderid='order-1-f97087', sku='sku-1-752639', qty=20)
+INFO:root:handling event Allocated(orderid='order-1-f97087', sku='sku-1-752639', qty=20, batchref='batch-1-cccbab') with handler <function publish_allocated_event at 0x000001C7BE7FE948>
+INFO:root:vai publicar o evento line_allocated: Allocated(orderid='order-1-f97087', sku='sku-1-752639', qty=20, batchref='batch-1-cccbab')
+INFO:root:handling event Allocated(orderid='order-1-f97087', sku='sku-1-752639', qty=20, batchref='batch-1-cccbab') with handler <function add_allocation_to_read_model at 0x000001C7BE7FE828>
+INFO:root:vai inserir na tabela de leitura: Allocated(orderid='order-1-f97087', sku='sku-1-752639', qty=20, batchref='batch-1-cccbab')
+INFO:root:handling command Allocate(orderid='order-1-f97087', sku='sku-2-1348e7', qty=20)
+INFO:root:handling event Allocated(orderid='order-1-f97087', sku='sku-2-1348e7', qty=20, batchref='batch-2-172fca') with handler <function publish_allocated_event at 0x000001C7BE7FE948>
+INFO:root:vai publicar o evento line_allocated: Allocated(orderid='order-1-f97087', sku='sku-2-1348e7', qty=20, batchref='batch-2-172fca')
+INFO:root:handling event Allocated(orderid='order-1-f97087', sku='sku-2-1348e7', qty=20, batchref='batch-2-172fca') with handler <function add_allocation_to_read_model at 0x000001C7BE7FE828>
+INFO:root:vai inserir na tabela de leitura: Allocated(orderid='order-1-f97087', sku='sku-2-1348e7', qty=20, batchref='batch-2-172fca')
+INFO:root:handling command CreateBatch(ref='batch-other-1-2ac102', sku='sku-1-752639', qty=50, eta=datetime.date(2020, 6, 25))
+INFO:root:handling command Allocate(orderid='order-other-1-7de011', sku='sku-1-752639', qty=30)
+INFO:root:handling event Allocated(orderid='order-other-1-7de011', sku='sku-1-752639', qty=30, batchref='batch-1-cccbab') with handler <function publish_allocated_event at 0x000001C7BE7FE948>
+INFO:root:vai publicar o evento line_allocated: Allocated(orderid='order-other-1-7de011', sku='sku-1-752639', qty=30, batchref='batch-1-cccbab')
+INFO:root:handling event Allocated(orderid='order-other-1-7de011', sku='sku-1-752639', qty=30, batchref='batch-1-cccbab') with handler <function add_allocation_to_read_model at 0x000001C7BE7FE828>
+INFO:root:vai inserir na tabela de leitura: Allocated(orderid='order-other-1-7de011', sku='sku-1-752639', qty=30, batchref='batch-1-cccbab')
+INFO:root:handling command Allocate(orderid='order-other-1-7de011', sku='sku-2-1348e7', qty=10)
+INFO:root:handling event Allocated(orderid='order-other-1-7de011', sku='sku-2-1348e7', qty=10, batchref='batch-2-172fca') with handler <function publish_allocated_event at 0x000001C7BE7FE948>
+INFO:root:vai publicar o evento line_allocated: Allocated(orderid='order-other-1-7de011', sku='sku-2-1348e7', qty=10, batchref='batch-2-172fca')
+INFO:root:handling event Allocated(orderid='order-other-1-7de011', sku='sku-2-1348e7', qty=10, batchref='batch-2-172fca') with handler <function add_allocation_to_read_model at 0x000001C7BE7FE828>
+INFO:root:vai inserir na tabela de leitura: Allocated(orderid='order-other-1-7de011', sku='sku-2-1348e7', qty=10, batchref='batch-2-172fca')
+INFO:root:handling command CreateBatch(ref='batch-1-141b65', sku='sku-1-ff1be2', qty=50, eta=None)
+INFO:root:handling command CreateBatch(ref='batch-2-0ef47d', sku='sku-2-8905f4', qty=50, eta=None)
+INFO:root:handling command Allocate(orderid='order-1-d9a5e2', sku='sku-1-ff1be2', qty=20)
+INFO:root:handling event Allocated(orderid='order-1-d9a5e2', sku='sku-1-ff1be2', qty=20, batchref='batch-1-141b65') with handler <function publish_allocated_event at 0x000001F02D63BA68>
+INFO:root:vai publicar o evento line_allocated: Allocated(orderid='order-1-d9a5e2', sku='sku-1-ff1be2', qty=20, batchref='batch-1-141b65')
+INFO:root:handling command CreateBatch(ref='batch-1-83206d', sku='sku-1-4b512c', qty=50, eta=None)
+INFO:root:handling command CreateBatch(ref='batch-2-18b1c1', sku='sku-2-b52510', qty=50, eta=None)
+INFO:root:handling command Allocate(orderid='order-1-de2252', sku='sku-1-4b512c', qty=20)
+ERROR:sqlalchemy.pool.impl.SingletonThreadPool:Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 693, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 880, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\engine\default.py", line 538, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 7888 and this is thread id 4492.
+ERROR:sqlalchemy.pool.impl.SingletonThreadPool:Exception closing connection <sqlite3.Connection object at 0x0000029133CED650>
+Traceback (most recent call last):
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 693, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 880, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\engine\default.py", line 538, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 7888 and this is thread id 4492.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 270, in _close_connection
+    self._dialect.do_close(connection)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\engine\default.py", line 544, in do_close
+    dbapi_connection.close()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 7888 and this is thread id 4492.
+INFO:root:handling command CreateBatch(ref='batch-1-e80342', sku='sku-1-c5e3f9', qty=50, eta=None)
+INFO:root:handling command CreateBatch(ref='batch-2-ddebb7', sku='sku-2-d19191', qty=50, eta=None)
+INFO:root:handling command Allocate(orderid='order-1-d5a054', sku='sku-1-c5e3f9', qty=20)
+ERROR:sqlalchemy.pool.impl.SingletonThreadPool:Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 693, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 880, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\engine\default.py", line 538, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 3332 and this is thread id 2828.
+ERROR:sqlalchemy.pool.impl.SingletonThreadPool:Exception closing connection <sqlite3.Connection object at 0x0000028690740C70>
+Traceback (most recent call last):
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 693, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 880, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\engine\default.py", line 538, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 3332 and this is thread id 2828.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 270, in _close_connection
+    self._dialect.do_close(connection)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\engine\default.py", line 544, in do_close
+    dbapi_connection.close()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 3332 and this is thread id 2828.
+INFO:root:handling command CreateBatch(ref='batch-1-6c27b3', sku='sku-1-1bd825', qty=50, eta=None)
+INFO:root:handling command CreateBatch(ref='batch-2-0ec923', sku='sku-2-2ebe38', qty=50, eta=None)
+INFO:root:handling command Allocate(orderid='order-1-6f6773', sku='sku-1-1bd825', qty=20)
+ERROR:sqlalchemy.pool.impl.SingletonThreadPool:Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 693, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 880, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\engine\default.py", line 538, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 15064 and this is thread id 8704.
+ERROR:sqlalchemy.pool.impl.SingletonThreadPool:Exception closing connection <sqlite3.Connection object at 0x0000021F3A8C61F0>
+Traceback (most recent call last):
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 693, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 880, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\engine\default.py", line 538, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 15064 and this is thread id 8704.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 270, in _close_connection
+    self._dialect.do_close(connection)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\engine\default.py", line 544, in do_close
+    dbapi_connection.close()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 15064 and this is thread id 8704.
+INFO:root:handling command CreateBatch(ref='batch-1-f9d692', sku='sku-1-d62ef8', qty=50, eta=None)
+INFO:root:handling command CreateBatch(ref='batch-2-708344', sku='sku-2-a708e2', qty=50, eta=None)
+INFO:root:handling command Allocate(orderid='order-1-e2541e', sku='sku-1-d62ef8', qty=20)
+ERROR:sqlalchemy.pool.impl.SingletonThreadPool:Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 693, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 880, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\engine\default.py", line 538, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 9632 and this is thread id 1156.
+ERROR:sqlalchemy.pool.impl.SingletonThreadPool:Exception closing connection <sqlite3.Connection object at 0x00000223E8E16C70>
+Traceback (most recent call last):
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 693, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 880, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\engine\default.py", line 538, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 9632 and this is thread id 1156.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 270, in _close_connection
+    self._dialect.do_close(connection)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\engine\default.py", line 544, in do_close
+    dbapi_connection.close()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 9632 and this is thread id 1156.
+INFO:root:handling command CreateBatch(ref='batch-1-c6a2db', sku='sku-1-5301fc', qty=50, eta=None)
+INFO:root:handling command CreateBatch(ref='batch-2-368ca0', sku='sku-2-6f09bf', qty=50, eta=None)
+INFO:root:handling command Allocate(orderid='order-1-09397e', sku='sku-1-5301fc', qty=20)
+INFO:root:handling event Allocated(orderid='order-1-09397e', sku='sku-1-5301fc', qty=20, batchref='batch-1-c6a2db') with handler <function publish_allocated_event at 0x000001FD19ABD948>
+INFO:root:vai publicar o evento line_allocated: Allocated(orderid='order-1-09397e', sku='sku-1-5301fc', qty=20, batchref='batch-1-c6a2db')
+INFO:root:handling command CreateBatch(ref='batch-1-4e2830', sku='sku-1-c49265', qty=50, eta=None)
+INFO:root:handling command CreateBatch(ref='batch-2-d39136', sku='sku-2-0b03e4', qty=50, eta=None)
+INFO:root:handling command Allocate(orderid='order-1-3772e3', sku='sku-1-c49265', qty=20)
+ERROR:sqlalchemy.pool.impl.NullPool:Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 693, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 880, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\engine\default.py", line 538, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 8980 and this is thread id 12752.
+ERROR:sqlalchemy.pool.impl.NullPool:Exception closing connection <sqlite3.Connection object at 0x000002676C7C2650>
+Traceback (most recent call last):
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 693, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 880, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\engine\default.py", line 538, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 8980 and this is thread id 12752.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 270, in _close_connection
+    self._dialect.do_close(connection)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\engine\default.py", line 544, in do_close
+    dbapi_connection.close()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 8980 and this is thread id 12752.
+INFO:root:achou o produto: HIPSTER-WORKBENCH3
+INFO:root:handling command CreateBatch(ref='batch-1-034aad', sku='sku-1-6a84e7', qty=50, eta=None)
+INFO:root:handling command CreateBatch(ref='batch-2-c55051', sku='sku-2-f7c673', qty=50, eta=None)
+INFO:root:handling command Allocate(orderid='order-1-e03157', sku='sku-1-6a84e7', qty=20)
+ERROR:sqlalchemy.pool.impl.NullPool:Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 693, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 880, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\engine\default.py", line 538, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 16308 and this is thread id 11004.
+ERROR:sqlalchemy.pool.impl.NullPool:Exception closing connection <sqlite3.Connection object at 0x000001177D15D110>
+Traceback (most recent call last):
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 693, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 880, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\engine\default.py", line 538, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 16308 and this is thread id 11004.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 270, in _close_connection
+    self._dialect.do_close(connection)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\engine\default.py", line 544, in do_close
+    dbapi_connection.close()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 16308 and this is thread id 11004.
+INFO:root:handling command CreateBatch(ref='batch-1-d80fe2', sku='sku-1-3132b7', qty=50, eta=None)
+INFO:root:handling command CreateBatch(ref='batch-2-44d32f', sku='sku-2-73028c', qty=50, eta=None)
+INFO:root:handling command Allocate(orderid='order-1-99b5f2', sku='sku-1-3132b7', qty=20)
+INFO:root:handling event Allocated(orderid='order-1-99b5f2', sku='sku-1-3132b7', qty=20, batchref='batch-1-d80fe2') with handler <function publish_allocated_event at 0x00000223B21CE948>
+INFO:root:vai publicar o evento line_allocated: Allocated(orderid='order-1-99b5f2', sku='sku-1-3132b7', qty=20, batchref='batch-1-d80fe2')
+INFO:root:handling command CreateBatch(ref='batch-1-ad9e13', sku='sku-1-2ceb77', qty=50, eta=None)
+INFO:root:handling command CreateBatch(ref='batch-2-5b6fbf', sku='sku-2-3989f7', qty=50, eta=None)
+INFO:root:handling command Allocate(orderid='order-1-777460', sku='sku-1-2ceb77', qty=20)
+ERROR:sqlalchemy.pool.impl.NullPool:Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 693, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 880, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\engine\default.py", line 538, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 11860 and this is thread id 13436.
+ERROR:sqlalchemy.pool.impl.NullPool:Exception closing connection <sqlite3.Connection object at 0x000001E455720110>
+Traceback (most recent call last):
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 693, in _finalize_fairy
+    fairy._reset(pool)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 880, in _reset
+    pool._dialect.do_rollback(self)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\engine\default.py", line 538, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 11860 and this is thread id 13436.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\pool\base.py", line 270, in _close_connection
+    self._dialect.do_close(connection)
+  File "C:\Users\ghann\Anaconda3\lib\site-packages\sqlalchemy\engine\default.py", line 544, in do_close
+    dbapi_connection.close()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 11860 and this is thread id 13436.
+INFO:root:handling command CreateBatch(ref='batch-1-566643', sku='sku-1-25b732', qty=50, eta=None)
+INFO:root:handling command CreateBatch(ref='batch-2-7a3e00', sku='sku-2-25273b', qty=50, eta=None)
+INFO:root:handling command Allocate(orderid='order-1-86de7c', sku='sku-1-25b732', qty=20)
+INFO:root:handling command CreateBatch(ref='batch-1-57ad8a', sku='sku-1-4639ac', qty=50, eta=None)
+INFO:root:handling command CreateBatch(ref='batch-2-b7e17f', sku='sku-2-49aacd', qty=50, eta=None)
+INFO:root:handling command Allocate(orderid='order-1-1b550f', sku='sku-1-4639ac', qty=20)
+INFO:root:handling event Allocated(orderid='order-1-1b550f', sku='sku-1-4639ac', qty=20, batchref='batch-1-57ad8a') with handler <function publish_allocated_event at 0x000002984B87D948>
+INFO:root:vai publicar o evento line_allocated: Allocated(orderid='order-1-1b550f', sku='sku-1-4639ac', qty=20, batchref='batch-1-57ad8a')
+INFO:root:handling event Allocated(orderid='order-1-1b550f', sku='sku-1-4639ac', qty=20, batchref='batch-1-57ad8a') with handler <function add_allocation_to_read_model at 0x000002984B87D828>
+INFO:root:vai inserir na tabela de leitura: Allocated(orderid='order-1-1b550f', sku='sku-1-4639ac', qty=20, batchref='batch-1-57ad8a')
+INFO:root:handling command Allocate(orderid='order-1-1b550f', sku='sku-2-49aacd', qty=20)
+INFO:root:handling event Allocated(orderid='order-1-1b550f', sku='sku-2-49aacd', qty=20, batchref='batch-2-b7e17f') with handler <function publish_allocated_event at 0x000002984B87D948>
+INFO:root:vai publicar o evento line_allocated: Allocated(orderid='order-1-1b550f', sku='sku-2-49aacd', qty=20, batchref='batch-2-b7e17f')
+INFO:root:handling event Allocated(orderid='order-1-1b550f', sku='sku-2-49aacd', qty=20, batchref='batch-2-b7e17f') with handler <function add_allocation_to_read_model at 0x000002984B87D828>
+INFO:root:vai inserir na tabela de leitura: Allocated(orderid='order-1-1b550f', sku='sku-2-49aacd', qty=20, batchref='batch-2-b7e17f')
+INFO:root:handling command CreateBatch(ref='batch-other-1-910018', sku='sku-1-4639ac', qty=50, eta=datetime.date(2020, 6, 25))
+INFO:root:handling command Allocate(orderid='order-other-1-33abee', sku='sku-1-4639ac', qty=30)
+INFO:root:handling event Allocated(orderid='order-other-1-33abee', sku='sku-1-4639ac', qty=30, batchref='batch-1-57ad8a') with handler <function publish_allocated_event at 0x000002984B87D948>
+INFO:root:vai publicar o evento line_allocated: Allocated(orderid='order-other-1-33abee', sku='sku-1-4639ac', qty=30, batchref='batch-1-57ad8a')
+INFO:root:handling event Allocated(orderid='order-other-1-33abee', sku='sku-1-4639ac', qty=30, batchref='batch-1-57ad8a') with handler <function add_allocation_to_read_model at 0x000002984B87D828>
+INFO:root:vai inserir na tabela de leitura: Allocated(orderid='order-other-1-33abee', sku='sku-1-4639ac', qty=30, batchref='batch-1-57ad8a')
+INFO:root:handling command Allocate(orderid='order-other-1-33abee', sku='sku-2-49aacd', qty=10)
+INFO:root:handling event Allocated(orderid='order-other-1-33abee', sku='sku-2-49aacd', qty=10, batchref='batch-2-b7e17f') with handler <function publish_allocated_event at 0x000002984B87D948>
+INFO:root:vai publicar o evento line_allocated: Allocated(orderid='order-other-1-33abee', sku='sku-2-49aacd', qty=10, batchref='batch-2-b7e17f')
+INFO:root:handling event Allocated(orderid='order-other-1-33abee', sku='sku-2-49aacd', qty=10, batchref='batch-2-b7e17f') with handler <function add_allocation_to_read_model at 0x000002984B87D828>
+INFO:root:vai inserir na tabela de leitura: Allocated(orderid='order-other-1-33abee', sku='sku-2-49aacd', qty=10, batchref='batch-2-b7e17f')
+INFO:root:handling command CreateBatch(ref='batch-1-1703cc', sku='sku-1-027d0a', qty=50, eta=None)
+INFO:root:handling command CreateBatch(ref='batch-1-6a485b', sku='sku-1-93fb02', qty=50, eta=None)
+INFO:root:handling command CreateBatch(ref='batch-1-9cfa2b', sku='sku-1-6e8cea', qty=50, eta=None)
+INFO:root:handling command CreateBatch(ref='batch-2-6bab95', sku='sku-2-e6efca', qty=50, eta=None)
+INFO:root:handling command Allocate(orderid='order-1-8a4d05', sku='sku-1-6e8cea', qty=20)
+INFO:root:handling event Allocated(orderid='order-1-8a4d05', sku='sku-1-6e8cea', qty=20, batchref='batch-1-9cfa2b') with handler <function inject_dependencies.<locals>.<lambda> at 0x000002850802B3A8>
+INFO:root:vai publicar o evento line_allocated: Allocated(orderid='order-1-8a4d05', sku='sku-1-6e8cea', qty=20, batchref='batch-1-9cfa2b')
+INFO:root:handling event Allocated(orderid='order-1-8a4d05', sku='sku-1-6e8cea', qty=20, batchref='batch-1-9cfa2b') with handler <function inject_dependencies.<locals>.<lambda> at 0x000002850802B318>
+INFO:root:vai inserir na tabela de leitura: Allocated(orderid='order-1-8a4d05', sku='sku-1-6e8cea', qty=20, batchref='batch-1-9cfa2b')
+INFO:root:handling command Allocate(orderid='order-1-8a4d05', sku='sku-2-e6efca', qty=20)
+INFO:root:handling event Allocated(orderid='order-1-8a4d05', sku='sku-2-e6efca', qty=20, batchref='batch-2-6bab95') with handler <function inject_dependencies.<locals>.<lambda> at 0x000002850802B3A8>
+INFO:root:vai publicar o evento line_allocated: Allocated(orderid='order-1-8a4d05', sku='sku-2-e6efca', qty=20, batchref='batch-2-6bab95')
+INFO:root:handling event Allocated(orderid='order-1-8a4d05', sku='sku-2-e6efca', qty=20, batchref='batch-2-6bab95') with handler <function inject_dependencies.<locals>.<lambda> at 0x000002850802B318>
+INFO:root:vai inserir na tabela de leitura: Allocated(orderid='order-1-8a4d05', sku='sku-2-e6efca', qty=20, batchref='batch-2-6bab95')
+INFO:root:handling command CreateBatch(ref='batch-other-1-b38d49', sku='sku-1-6e8cea', qty=50, eta=datetime.date(2020, 6, 27))
+INFO:root:handling command Allocate(orderid='order-other-1-c59726', sku='sku-1-6e8cea', qty=30)
+INFO:root:handling event Allocated(orderid='order-other-1-c59726', sku='sku-1-6e8cea', qty=30, batchref='batch-1-9cfa2b') with handler <function inject_dependencies.<locals>.<lambda> at 0x000002850802B3A8>
+INFO:root:vai publicar o evento line_allocated: Allocated(orderid='order-other-1-c59726', sku='sku-1-6e8cea', qty=30, batchref='batch-1-9cfa2b')
+INFO:root:handling event Allocated(orderid='order-other-1-c59726', sku='sku-1-6e8cea', qty=30, batchref='batch-1-9cfa2b') with handler <function inject_dependencies.<locals>.<lambda> at 0x000002850802B318>
+INFO:root:vai inserir na tabela de leitura: Allocated(orderid='order-other-1-c59726', sku='sku-1-6e8cea', qty=30, batchref='batch-1-9cfa2b')
+INFO:root:handling command Allocate(orderid='order-other-1-c59726', sku='sku-2-e6efca', qty=10)
+INFO:root:handling event Allocated(orderid='order-other-1-c59726', sku='sku-2-e6efca', qty=10, batchref='batch-2-6bab95') with handler <function inject_dependencies.<locals>.<lambda> at 0x000002850802B3A8>
+INFO:root:vai publicar o evento line_allocated: Allocated(orderid='order-other-1-c59726', sku='sku-2-e6efca', qty=10, batchref='batch-2-6bab95')
+INFO:root:handling event Allocated(orderid='order-other-1-c59726', sku='sku-2-e6efca', qty=10, batchref='batch-2-6bab95') with handler <function inject_dependencies.<locals>.<lambda> at 0x000002850802B318>
+INFO:root:vai inserir na tabela de leitura: Allocated(orderid='order-other-1-c59726', sku='sku-2-e6efca', qty=10, batchref='batch-2-6bab95')
