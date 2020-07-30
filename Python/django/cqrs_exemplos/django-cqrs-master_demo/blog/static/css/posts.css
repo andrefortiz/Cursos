@@ -1,0 +1,9 @@
+div.container {
+    margin-top: 5%;
+    width: 80%;
+}
+
+form {
+    position: fixed;
+    width: 35%;
+}

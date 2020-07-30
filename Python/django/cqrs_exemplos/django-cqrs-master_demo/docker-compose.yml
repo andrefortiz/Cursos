@@ -1,0 +1,17 @@
+version: '2'
+services:
+  postgres_db:
+    image: postgres
+  mongo_db:
+    image: mongo
+  web:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres_db
+      - mongo_db
+    entrypoint: /app/docker/web/entrypoint.sh
+    privileged: true
